@@ -2,5 +2,11 @@
     <string name="app_name">TrinityTest</string>
 
     <!--Home Activity-->
-    <string name="home_activity_avenger_text"></string>
+    <string name="home_activity_avenger_text">Avengers</string>
+    <string name="home_activity_hulk_text">Hulk</string>
+    <string name="home_activity_superman_text">Superman</string>
+    <string name="home_activity_spiderman_text">Spiderman</string>
+    <string name="home_activity_very_good_text">Very Good</string>
+    <string name="home_activity_awesome_text">Awesome</string>
+    <string name="home_activity_normal_text">Normal</string>
 </resources>
