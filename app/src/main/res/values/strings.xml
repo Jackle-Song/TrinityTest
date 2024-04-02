@@ -9,4 +9,10 @@
     <string name="home_activity_very_good_text">Very Good</string>
     <string name="home_activity_awesome_text">Awesome</string>
     <string name="home_activity_normal_text">Normal</string>
+
+    <!--Avenger Detail Activity-->
+    <string name="avenger_details_activity_description_text">Description</string>
+    <string name="avenger_details_activity_hulk_description_text">The Hulk is a superhero appearing in American comic books published by Marvel Comics. Created by writer Stan Lee and artist Jack Kirby, the character first appeared in the debut issue of The Incredible Hulk (May 1962). In his comic book appearances, the character, who has dissociative identity disorder (DID), is primarily represented by the alter ego Hulk, a green-skinned, hulking and muscular humanoid possessing a limitless degree of physical strength, and the alter ego Dr. Robert Bruce Banner, a physically weak, socially withdrawn, and emotionally reserved physicist, both of whom typically resent each other.</string>
+    <string name="avenger_details_activity_spiderman_description_text">Spider-Man is a superhero appearing in American comic books published by Marvel Comics. Created by writer-editor Stan Lee and artist Steve Ditko, he first appeared in the anthology comic book Amazing Fantasy #15 (August 1962) in the Silver Age of Comic Books. He has been featured in comic books, television shows, films, video games, novels, and plays.</string>
+    <string name="avenger_details_activity_superman_description_text">Superman is a superhero who appears in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster, and debuted in the comic book Action Comics #1 (cover-dated June 1938 and published April 18, 1938).[1] Superman has been adapted to a number of other media, which includes radio serials, novels, films, television shows, theater, and video games.</string>
 </resources>

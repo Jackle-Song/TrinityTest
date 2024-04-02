@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -15,9 +16,15 @@ import com.mrsworkshop.trinitytest.model.AvengersDataVO
 class AvengersListAdapter(
     private var mContext : Context,
     private var avengersDataList : MutableList<AvengersDataVO>?,
+    private var mListener : AvengersDetailInterface,
 ): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
+    interface AvengersDetailInterface {
+        fun viewAvengersDetail(avengersDataVO: AvengersDataVO)
+    }
+
     class AvengersDetailsViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
+        val layoutAvengersDetail : LinearLayout = itemView.findViewById(R.id.layoutAvengersDetail)
         val imgAvengers : ImageView = itemView.findViewById(R.id.imgAvengers)
         val txtAvengersTitle : TextView = itemView.findViewById(R.id.txtAvengersTitle)
         val txtAvengersReviews : TextView = itemView.findViewById(R.id.txtAvengersReviews)
@@ -42,6 +49,12 @@ class AvengersListAdapter(
 
         avengersDetailsViewHolder.txtAvengersTitle.text = avengersDetailItem?.title
         avengersDetailsViewHolder.txtAvengersReviews.text = avengersDetailItem?.review
+
+        avengersDetailsViewHolder.layoutAvengersDetail.setOnClickListener {
+            if (avengersDetailItem != null) {
+                mListener.viewAvengersDetail(avengersDetailItem)
+            }
+        }
     }
 
 }

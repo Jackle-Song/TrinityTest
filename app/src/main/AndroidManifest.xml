@@ -12,8 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrinityTest"
         tools:targetApi="31">
+        <activity android:name=".activity.AvengerDetailsActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
         <activity
             android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
